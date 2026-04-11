@@ -4,24 +4,34 @@ public class PracticeProblem {
 
 	}
 
-	public static void q1() {
-		//Write question 1 code here
-	}
+	
+	public static String seriesInclusive(int number){
+    if(number < 1){
+        return "";
+    }
+    String word = "";
+    int number1 = 1;
 
-	public static void q2() {
-		//Write question 2 code here
-	}
+    while(number1 <= number){
+        word+=number1;
+        if(number1 != number){
+            word += " ";
+        }
+        number1++;
+    }
 
-	public static void q3() {
-		//Write question 3 code here
+    return word;
+}
+	public static String seriesExclusive(int number){
+		String word="";
+		int number1=0;
+		while(number1<number){
+			word+=number1;
+			number1++;
+			if(number1<number){
+				word+=" ";
+			}
+		}
+		return(word);
 	}
-
-	public static void q4() {
-		//Write question 4 code here
-	}
-
-	public static void q5() {
-		//Write question 5 code here
-	}
-
 }
